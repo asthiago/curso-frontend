@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./vendor/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./vendor/owl/css/owl.css">
+    <link rel="stylesheet" href="./vendor/fontawesome/fontawesome.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>modulo 19</title>
+</head>
+<body>
+    <header>
+        <H1>modulo 19</H1>
+    </header>
+
+    <section>
+        <article>
+            <div class="container">
+                <form class="form">
+
+                    <div class="row">
+                        <div class="col">
+                            <div class="input-group">
+                                <input class="form-control" type="name" onblur="valnome()" onfocus="redefmsgn()" name="nome" id="nome" placeholder="digite seu nome" required>
+                                <span id="error-nome"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row"></div>
+                        <div class="col">
+                            <div class="input-group">
+                                <input class="form-control" type="email" onblur="valemail()" onfocus="redefmsg()" id="email" name="email" placeholder="digite seu email" required>
+                                <span id="error-email"></span>
+                            </div>
+                        </div>
+                    
+    
+                    <div class="row">
+                        <div class="col">
+                            <input type="text" id="cpf" class="form-control" placeholder="CPF" required>
+                        </div>
+                    </div>
+
+                    <button type="submit" class="btn btn-lg btn-success">enviar</button>
+    
+            </div>
+        </article>
+    </section>
+   
+        
+        <script src="./JQuery/vendor/JQuery/jquery-3.6.0.min.js"></script>
+        <script src="./JQuery/vendor/bootstrap/js/bootstrap.min.js"></script>
+        <script src="./JQuery/vendor/owl/js/owl.js"></script>
+        <script src="./js/custom.js"></script>
+    </body>
+    </html>
