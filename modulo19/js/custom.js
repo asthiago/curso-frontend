@@ -44,7 +44,7 @@ function valcpfl(){
     var cpf = document.querySelector('#cpf');
     var errorc = document.querySelector('#erro');
     var regex = /^\d{3}\.\d{3}\.\d{3}\-\d{2}$/;
-    if(cpf.value.length < 11||cpf.value.length > 11){
+    if(cpf.value.length < 14||cpf.value.length > 14){
         errorc.innerHTML = "cpf invalido";
     }
 }
@@ -70,3 +70,5 @@ input.addEventListener('keypress',() => {
 
 
 })
+
+
