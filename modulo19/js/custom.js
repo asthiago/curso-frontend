@@ -31,3 +31,42 @@ function redefmsgn(){
     }
 }
 
+
+
+
+
+
+
+
+
+
+function valcpfl(){
+    var cpf = document.querySelector('#cpf');
+    var errorc = document.querySelector('#erro');
+    var regex = /^\d{3}\.\d{3}\.\d{3}\-\d{2}$/;
+    if(cpf.value.length < 11||cpf.value.length > 11){
+        errorc.innerHTML = "cpf invalido";
+    }
+}
+
+function redefmsg(){
+    var errorc = document.querySelector('#erro')
+    if (errorc.innerHTML == 'cpf invalido'){
+        errorc.innerHTML = '';
+    }
+}
+
+const input = document.querySelector('#cpf')
+
+
+input.addEventListener('keypress',() => {
+    let inputlength = input.value.length
+
+    if (inputlength === 3 || inputlength === 7 ){
+        input.value += '.'
+    } else if (inputlength === 11){
+        input.value += '-'
+    }
+
+
+})

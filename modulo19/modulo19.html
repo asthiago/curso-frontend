@@ -39,7 +39,8 @@
     
                     <div class="row">
                         <div class="col">
-                            <input type="text" id="cpf" class="form-control" placeholder="CPF" required>
+                            <input type="text" id="cpf" onblur="valcpfl()" onfocus="redefmsg()"  class="form-control" placeholder="CPF" required>
+                            <span id="erro"></span>
                         </div>
                     </div>
 
